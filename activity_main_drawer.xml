@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/hospitals"
+            android:icon="@drawable/ic_hospital"
+            android:title="Hospitals" />
+        <item
+            android:id="@+id/srequest"
+            android:icon="@drawable/ic_request"
+            android:title="send request" />
+        <item
+            android:id="@+id/prequest"
+            android:icon="@drawable/ic_pending_request"
+            android:title="pending request" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/blood_bank"
+            android:title="About Us" />
+        <item
+            android:id="@+id/signout"
+            android:icon="@drawable/blood_bank"
+            android:title="LogOut" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

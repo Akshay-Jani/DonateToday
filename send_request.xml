@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="46dp"
+        android:text="Name: " />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="name" />
+
+    <TextView
+        android:id="@+id/bgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/uname"
+        android:layout_marginTop="43dp"
+        android:text="Blood Group: " />
+
+    <Spinner
+        android:id="@+id/ubgrp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bgrp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bgrp"
+        android:layout_below="@+id/ubgrp"
+        android:layout_marginTop="49dp"
+        android:text="Address:  " />
+
+    <EditText
+        android:id="@+id/uaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignStart="@+id/unumber"
+        android:ems="10"
+        android:hint="address"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bgrp"
+        android:layout_below="@+id/uaddress"
+        android:layout_marginTop="49dp"
+        android:text="Phone Number:  " />
+
+    <EditText
+        android:id="@+id/unumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/number"
+        android:layout_alignBottom="@+id/number"
+        android:layout_toEndOf="@+id/number"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="number"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ubgrp"
+        android:layout_below="@+id/unumber"
+        android:layout_marginTop="52dp"
+        android:text="submit" />
+
+
+</RelativeLayout>
